@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Color",
+        "values": [
+            "Red",
+            "Black",
+            "White",
+            "Yellow",
+            "Blue"
+        ]
+    },
+   	{
+   		"name": "Size",
+   		"values": [
+   			"X",
+   			"XL",
+   			"XXL",
+   			"S",
+   			"M",
+   			"L"
+   		]
+   	},
+   	{
+   		"name": "Size num",
+   		"values": [
+   			"20-23",
+   			"23-28",
+   			"28-33"
+   		]
+   	},
+   	{
+   		"name": "Qram",
+   		"values": [
+   			"20-23",
+   			"23-28",
+   			"28-33"
+   		]
+   	}   	
+]

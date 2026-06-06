@@ -1,0 +1,253 @@
+{
+    "products": [
+        {
+            "name": "T-SHIRT Have Fun",
+            "price": "19.90",
+            "imageSrc": [
+                "img/2.webp",
+                "img/3.webp"
+            ],
+            "category": "Футболки",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "04.06.2026",
+            "options": {
+                "Color": [
+                    "Black",
+                    "White"
+                ]
+            }
+        },
+        {
+            "name": "sadsa",
+            "price": "123",
+            "imageSrc": [
+                "img/Tabloid - 1.png"
+            ],
+            "category": "null",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Color": [
+                    "Red",
+                    "Black",
+                    "White"
+                ],
+                "Size": [
+                    "XL",
+                    "XXL",
+                    "M",
+                    "L"
+                ],
+                "Qram": [
+                    "20-23",
+                    "23-28",
+                    "28-33"
+                ]
+            }
+        },
+        {
+            "name": "Air Jordan 1 Yellow",
+            "price": "187",
+            "imageSrc": [
+                "img/AIR+JORDAN+1+MID.avif"
+            ],
+            "category": "null",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Size num": [
+                    "20-23",
+                    "23-28",
+                    "28-33"
+                ]
+            }
+        },
+        {
+            "name": "Air Jordan 1 Bun",
+            "price": "289",
+            "imageSrc": [
+                "img/JORDAN+SPIZIKE+LOW.avif"
+            ],
+            "category": "Обувь",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Size num": [
+                    "20-23",
+                    "23-28",
+                    "28-33"
+                ]
+            }
+        },
+        {
+            "name": "Air Jordan 1 Destiny",
+            "price": "187",
+            "imageSrc": [
+                "img/JORDAN+SPIZIKE+LOW+GS.avif",
+                "img/AIR+JORDAN+1+LOW.avif"
+            ],
+            "category": "Обувь",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Size num": [
+                    "20-23",
+                    "23-28",
+                    "28-33"
+                ]
+            }
+        },
+        {
+            "name": "Air Jordan 1 MID",
+            "price": "150",
+            "imageSrc": [
+                "img/AIR+JORDAN+1+RETRO+HIGH+OG+FC (1).avif",
+                "img/AIR+JORDAN+1+RETRO+HIGH+OG+FC.avif"
+            ],
+            "category": "Обувь",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Size num": [
+                    "20-23",
+                    "23-28",
+                    "28-33"
+                ]
+            }
+        },
+        {
+            "name": "Air Jordan 1 Low",
+            "price": "150",
+            "imageSrc": [
+                "img/AIR+JORDAN+1+RETRO+LOW+OG (6).avif",
+                "img/AIR+JORDAN+1+RETRO+LOW+OG (5).avif",
+                "img/AIR+JORDAN+1+RETRO+LOW+OG (4).avif",
+                "img/AIR+JORDAN+1+RETRO+LOW+OG (3).avif",
+                "img/AIR+JORDAN+1+RETRO+LOW+OG (2).avif",
+                "img/AIR+JORDAN+1+RETRO+LOW+OG (1).avif",
+                "img/AIR+JORDAN+1+RETRO+LOW+OG.avif"
+            ],
+            "category": "Обувь",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Size num": [
+                    "20-23",
+                    "23-28",
+                    "28-33"
+                ]
+            }
+        },
+        {
+            "name": "new products",
+            "price": "15",
+            "imageSrc": [
+                "img/110521-1339aac65086d51bb7297bc13d1c9a41.jpg",
+                "img/6a201a996a831_110527-b049a5954239cd7056fea5addc824fa2.jpg",
+                "img/110530-d2e20e647a5706264ef0f33fb5c795ed.webp",
+                "img/110543-7f7964c066e4dacb8128212266cc66a8.jpg"
+            ],
+            "category": "Аксессуары",
+            "group": false,
+            "brand": "",
+            "discount": "3",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Color": [
+                    "White",
+                    "Yellow"
+                ]
+            }
+        },
+        {
+            "name": "klefjf",
+            "price": "213",
+            "imageSrc": [
+                "img/7929578.jpg",
+                "img/7948819.jpg",
+                "img/7972655.jpg"
+            ],
+            "category": "Одежда",
+            "group": false,
+            "brand": "",
+            "discount": "31",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Color": [
+                    "Red",
+                    "White",
+                    "Yellow",
+                    "Blue"
+                ]
+            }
+        },
+        {
+            "name": "Air Fryer Euroacs EU-AF1208",
+            "price": "119.90",
+            "imageSrc": [
+                "img/7929578.jpg",
+                "img/7948819.jpg",
+                "img/7972655.jpg"
+            ],
+            "category": "Электроника",
+            "group": false,
+            "brand": "",
+            "discount": "4",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "03.06.2026",
+            "options": {
+                "Color": [
+                    "Black",
+                    "White"
+                ]
+            }
+        },
+        {
+            "name": "MOUSE GAMING WIRED FONI FN-GX50 RGB",
+            "price": "4.50",
+            "imageSrc": [
+                "img/7929578.jpg",
+                "img/7948819.jpg",
+                "img/7972655.jpg"
+            ],
+            "category": "Mouse",
+            "brand": "Foni",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false
+        }
+    ]
+}
