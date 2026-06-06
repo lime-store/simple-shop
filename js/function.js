@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    const orderViewSrc = 'https://gpr-xirdalan.github.io/orderView.html?orderId=';
-    const saveOrderSrc = 'https://gpr-xirdalan-github-io.vercel.app/api/saveOrder';
-    const phoneNumber = '994512058808';
-    const shareSrc = 'https://gpr-xirdalan.github.io/?product_name=';
+    const orderViewSrc = 'https://lime-store.github.io/simple-shop/orderView.html?orderId=';
+    const saveOrderSrc = 'https://simple-shop-nu.vercel.app/api/saveOrder';
+    const phoneNumber = '994504213635';
+    const shareSrc = 'https://lime-store.github.io/simple-shop/?product_name=';
 
     const urlParams = new URLSearchParams(window.location.search);
     const urlCategory = urlParams.get('category');

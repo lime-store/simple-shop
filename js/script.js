@@ -1,7 +1,7 @@
 const GITHUB_TOKEN = ""; 
 const REPO_OWNER = "lime-store";
-const REPO_NAME = "gpr-xirdalan.github.io";
-const FILE_PATH = "order.json";
+const REPO_NAME = "Barely-works-order";
+const FILE_PATH = "order_bw_main.json";
 let order = [];
 
 function encodeBase64(str) {
