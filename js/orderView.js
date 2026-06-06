@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
     $.ajax({
-        url: `https://api.github.com/repos/lime-store/order/contents/order_bw_main.json?timestamp=${Date.now()}`,
+        url: `https://api.github.com/repos/lime-store/Barely-works-order/contents/order_bw_main.json?timestamp=${Date.now()}`,
         method: "GET",
         headers: { "Accept": "application/vnd.github.v3.raw" },
         beforeSend: () => {
