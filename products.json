@@ -1,6 +1,32 @@
 {
     "products": [
         {
+            "name": "Pizza",
+            "price": "19.90",
+            "imageSrc": [
+                "img/3344c220d694081c69d2dd9fd98117473.png"
+            ],
+            "category": "Pizza",
+            "group": false,
+            "brand": "",
+            "discount": "",
+            "pinned": false,
+            "hasNew": false,
+            "addedDate": "07.06.2026",
+            "options": {
+                "Ölçü": [
+                    "Kiçik",
+                    "Orta",
+                    "Böyük"
+                ]
+            },
+            "optionPrice": {
+                "Kiçik": "19.90",
+                "Orta": "25.90",
+                "Böyük": "33.90"
+            }
+        },
+        {
             "name": "Air Jordan 1",
             "price": "349",
             "imageSrc": [
