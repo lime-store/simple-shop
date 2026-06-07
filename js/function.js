@@ -1,8 +1,11 @@
+
+
 $(document).ready(function() {
     const orderViewSrc = 'https://lime-store.github.io/simple-shop/orderView.html?orderId=';
     const saveOrderSrc = 'https://simple-shop-nu.vercel.app/api/saveOrder';
     const phoneNumber = '994504213635';
     const shareSrc = 'https://lime-store.github.io/simple-shop/?product_name=';
+    
 
     const urlParams = new URLSearchParams(window.location.search);
     const urlCategory = urlParams.get('category');
@@ -32,7 +35,7 @@ $(document).ready(function() {
     let isLoading = false;
     let customData = [];
 
-    $.getJSON("products.json?v=186", function(data) {
+    $.getJSON(`products.json?v=${lastUpdate}`, function(data) {
       products = data.products;
       getCategoryList();
 
@@ -232,6 +235,27 @@ $(document).ready(function() {
           
           let itemSum = sumItemTotal(row.count, row.productPrice);
 
+          let optionList = '';
+
+          console.log(row);
+
+          if(row.options) {
+          Object.entries(row.options).forEach(([optionName, attributes]) => {
+              const attributesHtml = attributes
+                .map(attr => `<span class="opt-value">${attr}</span>`)
+                .join(' '); 
+
+              optionList += `
+                <div class="opt-list-wrp">
+                  <span class="opt-name">${optionName}</span>
+                  <div class="opt-list">
+                    ${attributesHtml}
+                  </div>
+                </div>
+              `;
+            });
+          }          
+
           $('.cart-list').prepend(`
             <div class="cart-list-item">
                <div class="cart-list-image">
@@ -243,6 +267,10 @@ $(document).ready(function() {
 
                   <span class="cart-list-item-name">${row.productName}</span>
                   <span class="cart-list-item-productPrice">${row.productPrice}</span>
+                  
+                  <div class="cart-product-options">
+                  ${optionList}
+                  </div>
 
                   <div class="cart-list-info-count-group">
                     <span class="cart-label">Say:</span>
@@ -415,6 +443,12 @@ $(document).ready(function() {
   $(document).on('click', '.opt-value', function() {
     $(this).closest('.opt-list-wrp').find('.opt-value').removeClass('active');
     $(this).addClass('active');
+
+    const price = $(this).attr('data-price');
+    if(price !== 'undefined') {
+      $(this).closest('.products-card').find('.products-price').text(`${price}₼`);
+      $(this).closest('.product-info').find('.cart-product-price').text(`${price}₼`);
+    }
   });
 
 
@@ -449,12 +483,22 @@ $(document).ready(function() {
       }
 
       let optionList = '';
+      let dataPrice = '';
 
       if(product.options) {
       Object.entries(product.options).forEach(([optionName, attributes]) => {
-          const attributesHtml = attributes
-            .map(attr => `<span class="opt-value">${attr}</span>`)
-            .join(' '); 
+
+          const attributesHtml = 
+          attributes.map(attr => {
+            if(product.optionPrice) {
+              dataPrice = product.optionPrice[attr];
+            }
+
+
+             return `<span class="opt-value" data-price="${dataPrice}">${attr}</span>`
+          }).join(' '); 
+
+
 
           optionList += `
             <div class="opt-list-wrp">
@@ -824,5 +868,12 @@ function openFullscreen() {
   }
 }
 
+function showNotice() {
+  $('.showNotice').addClass('active');
+
+  setTimeout(function(){
+    $('.showNotice').removeClass('active');
+ }, 1000);  
+}
 
 });

@@ -50,7 +50,28 @@ $(document).ready(function() {
 
 
 
-    function appendOrderView(row, total) {        
+    function appendOrderView(row, total) {
+          let optionList = '';
+
+          console.log(row);
+
+          if(row.options) {
+          Object.entries(row.options).forEach(([optionName, attributes]) => {
+              const attributesHtml = attributes
+                .map(attr => `<span class="opt-value">${attr}</span>`)
+                .join(' '); 
+
+              optionList += `
+                <div class="opt-list-wrp">
+                  <span class="opt-name">${optionName}</span>
+                  <div class="opt-list">
+                    ${attributesHtml}
+                  </div>
+                </div>
+              `;
+            });
+          }  
+
           $('.cart-list').append(`
             <div class="cart-list-item">
                <div class="cart-list-image" style="width: 170px; height: 170px;">
@@ -60,6 +81,10 @@ $(document).ready(function() {
                <div class="cart-list-info">
                   <span class="cart-list-item-name">${row.productName}</span>
                   <span class="cart-list-item-productPrice">${row.productPrice}</span>
+
+                  <div class="cart-product-options">
+                    ${optionList}
+                  </div>
 
                   <div class="cart-list-info-count-group">
                     <span class="cart-label">Say:</span>
